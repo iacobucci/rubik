@@ -1,13 +1,14 @@
 from enum import Enum
 from copy import copy,deepcopy
+from termcolor import colored
 
 class Color(Enum):
-    G = 'G'
-    R = 'R'
-    B = 'B'
-    O = 'O'
-    W = 'W'
-    Y = 'Y'
+    G = str(colored('█',"green"))
+    R = str(colored('█',"red"))
+    B = str(colored('█',"blue"))
+    O = str(colored('█',"magenta"))
+    W = str(colored('█',"white"))
+    Y = str(colored('█',"yellow"))
     N = 'N'
 
 
